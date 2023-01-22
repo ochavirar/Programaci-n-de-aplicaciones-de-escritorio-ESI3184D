@@ -1,0 +1,37 @@
+Especificaciones: 
+
+El alumno deberá realizar un documento HTML y una hoja de estilos para crear una página de presentación, con comportamiento responsivo. 
+
+Cada alumno determinará los puntos de quiebre necesarios. Deberá incluir por lo menos 2 puntos de quiebre (breakpoints).
+
+La página web deberá presentar información sobre el alumno, que puede incluir, como ejemplo, algunas de las siguientes secciones:
+
+Menú principal
+Sección principal
+Hobbies
+Fotos
+Contacto
+Etc. 
+ 
+
+La página de presentación debe satisfacer las siguientes características:
+
+Definir un comportamiento mobile-first o desktop-first
+Definir los puntos de quiebre para los media queries (mínimo 2 breakpoints)
+Implementar propiedades de CSS que permiten el acomodo de los elementos (ejemplo: position, float, flex, etc.)
+Implementar etiquetas de HTML semántico (nav, section, aside, header, footer, etc.)
+Incluir por lo menos una etiqueta <img>
+ 
+
+Formato de entrega: 
+
+El alumno deberá crear un repositorio público en Github, mismo que se utilizara para todas las tareas.
+Crear una nueva rama llamada "tarea1"
+Dentro de la nueva rama, crear la carpeta "Tarea 1"
+Insertar los archivos de la tarea (html, css, imagenes, js) "Tarea 1"
+Crear un Pull Request desde tarea1 hacia la rama principal (main/master)
+Compartir la URL del repositorio.
+Notas:
+
+Se realizará el "merge" de la rama una vez evaluada la tarea. 
+Favor de respetar los nombres de las ramas y carpetas. Tomar esas especificaciones como "requerimientos"
