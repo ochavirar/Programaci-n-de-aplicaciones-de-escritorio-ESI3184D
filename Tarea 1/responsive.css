@@ -1,0 +1,239 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+/*Height necesita una referencia padre, ya que toma a body,
+de esta forma la altura ya se puede crecer hasta el 100%
+CSS fue diseñado para width*/
+body{
+    height: 100%;
+}
+
+header, footer {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(102, 217, 209);
+    text-align: center;
+}
+
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+li{
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1800px){
+    #navigationMenu{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    #navigationContainer{
+        max-width: 1280px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #navigation > li{
+        float: left;
+        border: solid 1px blue;
+        background-color: whitesmoke;
+        list-style-type: none;
+        height: 40px;
+        width: 200px;
+        border-radius: 25px;
+    }
+
+    #navigation > li > a{
+        text-align: center;
+    }
+
+    #navigation::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #listMenu{
+        margin: 0 auto;
+    }
+
+    #description > img{
+        float: right;
+        width: 15%;
+        height: 15%;
+        margin-left: 30px;
+    }
+
+    #description::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #description > p{
+        font-size: larger;
+    }
+
+    #sectionsSummary > p{
+        font-size: larger;
+    }
+
+    aside > p{
+        font-size: larger;
+    }
+
+    #futuro > p{
+        font-size: larger;
+    }
+
+    #futuro > img{
+        float: right;
+    }
+
+    #futuro::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #hobbies > p{
+        font-size: larger;
+    }
+
+    #hobbies > img{
+        float: left;
+        width: 20%;
+        height: 20%;
+        padding: 10px;
+    }
+
+    #hobbies::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #dreams > img{
+        float: right;
+        width: 20%;
+        height: 20%;
+        padding: 10px;
+    }
+
+    #dreams::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    header, footer {
+        height: 120px;
+        width: 100%;
+        background-color: rgb(102, 217, 209);
+        text-align: center;
+    }
+
+    #navigationMenu{
+        max-width:500px;
+        margin: 0 auto;
+    }
+
+    #navigationContainer{
+        max-width: 1280px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #navigation > li{
+        float: left;
+        border: solid 1px blue;
+        background-color: whitesmoke;
+        list-style-type: none;
+        font-size: larger;
+        height: 40px;
+        width: 200px;
+        border-radius: 25px;
+    }
+
+    #navigation > li > a{
+        text-align: center;
+    }
+
+    #listMenu{
+        margin: 0 auto;
+    }
+
+    #description > img{
+        float: right;
+        width: 15%;
+        height: 15%;
+        margin-left: 70px;
+        margin-right: 60px;
+    }
+
+    #description::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #description > h1{
+        font-size: xx-large;
+    }
+
+    #description > p{
+        font-size: larger;
+    }
+
+    #futuro > p{
+        font-size: larger;
+    }
+
+    #futuro > img{
+        float: right;
+        margin-right: 60px;
+    }
+
+    #futuro::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #hobbies > p{
+        font-size: larger;
+    }
+
+    #hobbies > img{
+        width: 20%;
+        height: 20%;
+        margin-left: 25px;
+        padding: 10px;
+    }
+
+    #dreams > img{
+        width: 20%;
+        height: 20%;
+        padding: 10px;
+        margin-right: 20px;
+    }
+
+    h1, h2{
+        margin-left: 20px;
+    }
+
+    p{
+        margin-left: 30px;
+    }
+
+}
