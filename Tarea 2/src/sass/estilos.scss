@@ -1,0 +1,385 @@
+@import "mixins";
+@import "colors";
+
+html, body{
+    @include no-margin;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100%;
+}
+
+header, footer{
+    @include headerAndFooter;
+}
+
+main{
+    @include main-content-template;
+    padding: 0%;
+    min-width: 1024px;
+}
+
+#navigationContainer{
+    @include nav-container;
+    max-width: 1280px;
+}
+
+#navigationMenu{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#navigation{
+    > li{
+        @include button-style-desktop;
+        height: 40px;
+        width: 200px;
+    }
+
+    > li > a{
+        text-align: center;
+    }
+
+    ::after{
+        @include clear-fix-both;
+    }
+}
+
+#description{
+    > img {
+        float: right;
+        width: 10%;
+        height: 10%;
+        margin-left: 30px;
+    }
+
+    &::after{
+        @include clear-fix-both;
+    }
+
+    > p {
+        font-size: larger;
+    }
+}
+
+aside{
+    > p{
+        font-size: larger;
+    }
+}
+
+#listMenu{
+    @include no-margin;
+}
+
+#sectionsSummary > p{
+    font-size: larger;
+}
+
+aside > p{
+    font-size: larger;
+}
+
+#futuro{
+    > p{
+        font-size: larger;
+    }
+
+    > img{
+        float: right;
+        width: 15%;
+        height: 15%;
+    }
+
+    ::after{
+        @include clear-fix-both;
+    }
+}
+
+#hobbies{
+    > p {
+        font-size: larger;
+    }
+
+    > img{
+        float: left;
+        width: 15%;
+        height: 15%;
+        padding: 10px;
+    }
+
+    ::after{
+        @include clear-fix-both;
+    }
+}
+
+#dreams{
+    > img{
+        float: right;
+        width: 15%;
+        height: 15%;
+        padding: 10px;
+    }
+
+    ::after{
+        @include clear-fix-both;
+    }
+}
+
+@include tablet{
+    body{
+        height: 100%;
+    }
+
+    header, footer{
+        @include headerAndFooter;
+    }
+
+    main{
+        @include main-content-template;
+        padding: 0%;
+        min-width: 901px;
+    }
+
+    #navigationContainer{
+        @include nav-container;
+        max-width: 1280px;
+    }
+
+    #navigationMenu{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    %boton-tablet{
+        @include button-style-tablet;
+    }
+
+    #navigation{
+        > li{
+            @extend %boton-tablet;
+            height: 40px;
+            width: 200px;
+            padding: 5px;
+        }
+
+        > li > a{
+            text-align: center;
+        }
+
+        ::after{
+            @include clear-fix-both;
+        }
+    }
+
+    #description{
+        > img {
+            float: right;
+            width: 15%;
+            height: 15%;
+            margin-left: 30px;
+        }
+
+        &::after{
+            @include clear-fix-both;
+        }
+
+        > p {
+            font-size: larger;
+        }
+    }
+
+    aside{
+        > p{
+            font-size: larger;
+        }
+    }
+
+    #listMenu{
+        @include no-margin;
+    }
+
+    #sectionsSummary > p{
+        font-size: larger;
+    }
+
+    aside > p{
+        font-size: larger;
+    }
+
+    #futuro{
+        > p{
+            font-size: larger;
+        }
+
+        > img{
+            float: right;
+            width: 20%;
+            height: 20%;
+        }
+
+        ::after{
+            @include clear-fix-both;
+        }
+    }
+
+    #hobbies{
+        > p {
+            font-size: larger;
+        }
+
+        > img{
+            float: left;
+            width: 21%;
+            height: 21%;
+            padding: 10px;
+        }
+
+        ::after{
+            @include clear-fix-both;
+        }
+    }
+
+    #dreams{
+        > img{
+            float: right;
+            width: 25%;
+            height: 25%;
+            padding: 10px;
+        }
+
+        ::after{
+            @include clear-fix-both;
+        }
+    }
+} 
+
+@include cellphone{
+    body{
+        height: 100%;
+    }
+
+    header, footer{
+        height: 130px;
+        width: 100%;
+    }
+
+    main{
+        @include main-content-template;
+        height: 150%;
+        padding: 0%;
+        min-width: 768px;
+    }
+
+    #navigationContainer{
+        @include nav-container;
+        max-width: 900px;
+    }
+
+    #navigationMenu{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    %boton-cellphone{
+        @include button-style-cellphone;
+    }
+
+    #navigation{
+        > li{
+            @extend %boton-cellphone;
+            height: 40px;
+            width: 300px;
+        }
+
+        > li > a{
+            text-align: center;
+        }
+
+        ::after{
+            @include clear-fix-both;
+        }
+    }
+
+    #description{
+        > img {
+            float: right;
+            width: 15%;
+            height: 15%;
+            margin-left: 30px;
+        }
+
+        &::after{
+            @include clear-fix-both;
+        }
+
+        > p {
+            font-size: larger;
+        }
+    }
+
+    aside{
+        > p{
+            font-size: larger;
+        }
+    }
+
+    #listMenu{
+        @include no-margin;
+    }
+
+    #sectionsSummary > p{
+        font-size: larger;
+    }
+
+    aside > p{
+        font-size: larger;
+    }
+
+    #futuro{
+        > p{
+            font-size: larger;
+        }
+
+        > img{
+            float: right;
+            width: 15%;
+            height: 15%;
+        }
+
+        ::after{
+            @include clear-fix-both;
+        }
+    }
+
+    #hobbies{
+        > p {
+            font-size: larger;
+        }
+
+        > img{
+            float: left;
+            width: 15%;
+            height: 15%;
+            padding: 10px;
+        }
+
+        ::after{
+            @include clear-fix-both;
+        }
+    }
+
+    #dreams{
+        > img{
+            float: right;
+            width: 15%;
+            height: 15%;
+            padding: 10px;
+        }
+
+        ::after{
+            @include clear-fix-both;
+        }
+    }
+} 
