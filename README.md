@@ -6,3 +6,5 @@ Página de presentación y con crecimiento a futuro de otros temas para compleme
 Para correr la aplicación de la tarea 2 se debe usar el comando styles.
 
 Para la tarea 3 se debe ejecutar con npm start únicamente, ya que los estilso de sass ya vienen compilados.
+
+Para la tarea 4 se puede usar el .env.example como guia para lograr que se tenga la key necesaria. 
