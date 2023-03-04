@@ -1,0 +1,9 @@
+<h1>Bienvenido a tu lugar de noticias favorito</h1>
+<br>
+<h2>Usa la barra para buscar lo que necesitas</h2>
+
+<ul>
+    {{#each noticias}}
+        <li><a href="{{this.url}}">{{this.title}}</a></li>
+    {{/each}}
+</ul>
