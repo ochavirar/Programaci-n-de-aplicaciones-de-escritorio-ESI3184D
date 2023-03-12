@@ -1,0 +1,45 @@
+Para este trabajo se usan las tecnoloías mencionadas a continuación:
+- Express
+- Mongoose
+- Swagger
+- bodyParser
+- Nodemon
+- dotEnv
+
+La utilidad de esta aplicación radica en operaciones CRUD para tareas con los siguientes parámetros:
+- Título
+- Descripción
+- Estado
+- Fecha de creación
+
+Para ejecutar este trabajo se deben tener en cuenta las siguientes consideraciones:
+- npm start para ejecutar el servidor
+- Sigue el .env para poder dar de alta tu propio cluster en mongoDB y ver los resultado. 
+Para ello debes usar la liga que adjunté en la entrega de la tarea bajo la creación de la variable de entorno
+MONGO_URL
+- Una vez que se han tenido esas consdieraciones se puede acceder a http://localhost:3000/swagger para probar las consultas
+- Si se prefiere probar con postman deber usar las rutas http:localhost:3000/tasks o http:localhost:3000/tasks/:id
+
+Si se quiere agragar una tarea se debe usar el post con el siguiente json:
+{
+    "title": "Trial task",
+    "description": "This is a trial description",
+    "status": "New",
+    "creationDate": "2023-11-03" 
+}   
+
+Si se quiere editar una tarea se debe usar el put con la estructura anterior:
+{
+    "title": "Trial task modified",
+    "description": "This is a trial description to see if the original was changed",
+    "status": "Old",
+    "creationDate": "2023-11-04" 
+}   
+asimismo, se debe poner el ID destino en el campo correspondiente en swagger
+
+Para hacer un get de todas las tareas no hace falta considerar nada más que dar ejecutar en swagger:
+Execute
+
+Para buscar por id debemos poner ese dato en el campo que lo marca en swagger:
+Poner el ID en el campo que lo marque, esto funciona para obtener una tarea específica, borrar una tarea 
+en especial y también para editar una tarea con cierto ID (aunque ello require el JSON)
