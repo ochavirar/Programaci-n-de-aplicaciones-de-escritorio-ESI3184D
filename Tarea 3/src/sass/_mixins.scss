@@ -1,0 +1,66 @@
+@import "colors";
+
+@mixin no-margin{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin headerAndFooter{
+    height: 80px;
+    width: 100%;
+    background-color: $color-header-footer;
+    text-align: center;
+}
+
+@mixin main-content-template{
+    background-color: $main-color;
+    margin: 0 auto;
+}
+
+@mixin clear-fix-both{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin button-style-desktop{
+    float: left;
+    border: solid 1px $border-button-desktop;
+    background-color: $background-button-desktop;
+    list-style-type: none;
+    border-radius: 25%;
+}
+
+@mixin button-style-tablet{
+    background-color: $background-button-tablet;
+    border-color: $background-button-tablet;
+    list-style-type: none;
+    border-radius: 25%;
+    margin: 2px;
+}
+
+@mixin button-style-cellphone{
+    background-color: $background-button-cellphone;
+    border-color: $background-button-cellphone;
+    list-style-type: none;
+    border-radius: 25%;
+    margin: 2px;
+}
+
+@mixin nav-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin tablet{
+    @media screen and (max-width: 1040px){
+        @content;
+    }
+}
+
+@mixin cellphone{
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+}
